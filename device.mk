@@ -14,6 +14,37 @@
 # limitations under the License.
 #
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOTANIMATION_HALF_RES := true
+
+# Inherit some common Bliss stuff.
+$(call inherit-product, vendor/bliss/config/common.mk)
+
+#OpenGAPPS
+$(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
+
+#OpenGAPPS
+GAPPS_VARIANT := pico
+PRODUCT_PACKAGES += Chrome \
+    KeyboardGoogle \
+    LatinImeGoogle \
+    GoogleTTS \
+    YouTube \
+    PixelIcons \
+    PixelLauncher \
+    Wallpapers \
+    PixelLauncherIcons \
+    WebViewGoogle \
+
+GAPPS_FORCE_BROWSER_OVERRIDES := true
+
+GAPPS_EXCLUDED_PACKAGES := FaceLock \
+PrebuiltGmsCoreInstantApps \
+
+#EndCustomCrap
+
 PRODUCT_DIR := $(dir $(lastword $(filter-out device/common/%,$(filter device/%,$(ALL_PRODUCTS)))))
 
 PRODUCT_PROPERTY_OVERRIDES := \
