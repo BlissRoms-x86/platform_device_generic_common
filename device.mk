@@ -32,16 +32,15 @@ PRODUCT_PACKAGES += Chrome \
     LatinImeGoogle \
     GoogleTTS \
     YouTube \
-    PixelIcons \
-    PixelLauncher \
     Wallpapers \
-    PixelLauncherIcons \
     WebViewGoogle \
 
 GAPPS_FORCE_BROWSER_OVERRIDES := true
 
 GAPPS_EXCLUDED_PACKAGES := FaceLock \
 PrebuiltGmsCoreInstantApps \
+PixelLauncher \
+Launcher3 \
 
 #EndCustomCrap
 
