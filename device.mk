@@ -41,6 +41,7 @@ GAPPS_EXCLUDED_PACKAGES := FaceLock \
 PrebuiltGmsCoreInstantApps \
 PixelLauncher \
 Launcher3 \
+Launcher2 \
 
 #EndCustomCrap
 
