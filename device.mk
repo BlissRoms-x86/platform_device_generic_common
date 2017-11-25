@@ -15,8 +15,8 @@
 #
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 600
 TARGET_BOOTANIMATION_HALF_RES := true
 
 # Inherit some common Bliss stuff.
@@ -58,7 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
     ro.arch=x86 \
-    persist.rtc_local_time=1 \
+    persist.rtc_local_time=0 \
 
 PRODUCT_COPY_FILES := \
     $(if $(wildcard $(PRODUCT_DIR)init.rc),$(PRODUCT_DIR)init.rc:root/init.rc) \
