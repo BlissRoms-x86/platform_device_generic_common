@@ -99,3 +99,7 @@ PRODUCT_PACKAGES += \
 # Third party apps
 PRODUCT_PACKAGES += \
     Eleven \
+    
+# OpenThos apps 
+PRODUCT_PACKAGES += \
+  OtoKeyboardMap 
