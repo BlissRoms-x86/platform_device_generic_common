@@ -27,7 +27,7 @@ PRODUCT_PACKAGES += \
     #android.hardware.camera.provider@2.4-service
 
 # DumpState HAL 
-PRODUCT_PACKAGES += \ 
+PRODUCT_PACKAGES += \
     android.hardware.dumpstate@1.0-impl \
     android.hardware.dumpstate@1.0-service 
 
