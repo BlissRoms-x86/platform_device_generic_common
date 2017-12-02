@@ -11,7 +11,7 @@ PRODUCT_PACKAGES += \
 # Audio HAL
 PRODUCT_PACKAGES += \
     android.hardware.audio@2.0-impl \
-    android.hardware.audio@2.0-service \ 
+    android.hardware.audio@2.0-service \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.soundtrigger@2.0-impl
@@ -23,8 +23,8 @@ PRODUCT_PACKAGES += \
 # Camera HAL
 PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.2-impl \
-    android.hardware.camera.provider@2.4-impl
-#   android.hardware.camera.provider@2.4-service
+    android.hardware.camera.provider@2.4-impl \
+    #android.hardware.camera.provider@2.4-service
 
 # DumpState HAL 
 PRODUCT_PACKAGES += \ 
