@@ -34,14 +34,12 @@ PRODUCT_PACKAGES += Chrome \
     YouTube \
     Wallpapers \
     WebViewGoogle \
+    PixelLauncher \
 
 GAPPS_FORCE_BROWSER_OVERRIDES := true
 
 GAPPS_EXCLUDED_PACKAGES := FaceLock \
 PrebuiltGmsCoreInstantApps \
-PixelLauncher \
-Launcher3 \
-Launcher2 \
 
 #EndCustomCrap
 
