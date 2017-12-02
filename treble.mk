@@ -28,7 +28,7 @@ PRODUCT_PACKAGES += \
 
 # DumpState HAL 
 PRODUCT_PACKAGES += \ 
-    android.hardware.dumpstate@1.0-impl \ 
+    android.hardware.dumpstate@1.0-impl \
     android.hardware.dumpstate@1.0-service 
 
 # DRM HAL
@@ -40,8 +40,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl
 
 # Health HAL 
-PRODUCT_PACKAGES += \ 
-    android.hardware.health@1.0-impl 
+PRODUCT_PACKAGES += \
+    android.hardware.health@1.0-impl
 
 # GNSS HAL
 PRODUCT_PACKAGES += \
@@ -67,7 +67,7 @@ PRODUCT_PACKAGES += \
 # Power HAL
 PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl \
-    android.hardware.power@1.0-service 
+    android.hardware.power@1.0-service
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
@@ -83,7 +83,7 @@ PRODUCT_PACKAGES += \
 
 # USB HAL
 PRODUCT_PACKAGES += \
-	android.hardware.usb@1.0-impl \ 
+    android.hardware.usb@1.0-impl \
     android.hardware.usb@1.0-service
 
 # Vibrator
