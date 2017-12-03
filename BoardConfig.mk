@@ -87,3 +87,5 @@ PRC_COMPATIBILITY_PACKAGE := true
 ZIP_OPTIMIZATION_NO_INTEGRITY := true
 
 DEVICE_MANIFEST_FILE := device/generic/common/manifest.xml
+
+DEFAULT_ROOT_METHOD := supersu
