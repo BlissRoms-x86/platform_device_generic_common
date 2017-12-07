@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
     android.hardware.nfc@1.0-service
+    
+# Default OMX service to non-Treble
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.media.treble_omx=false 
 
 # Power HAL
 PRODUCT_PACKAGES += \
