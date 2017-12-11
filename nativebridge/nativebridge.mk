@@ -30,9 +30,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 endif
 
 ifneq ($(HOUDINI_PREINSTALL),intel)
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES := ro.dalvik.vm.native.bridge=libnb.so
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES := ro.dalvik.vm.native.bridge=libhoudini.so
 
-PRODUCT_PACKAGES := libnb
+PRODUCT_PACKAGES := libhoudini
 endif
 
 $(call inherit-product-if-exists,vendor/intel/houdini/houdini.mk)
