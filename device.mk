@@ -56,7 +56,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.recents.grid=true 
 
 #Bliss-x86 added packages
-PRODUCT_PACKAGES += BluetoothExt \
+# PRODUCT_PACKAGES += BluetoothExt \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES := \
     ro.arch=x86 \
