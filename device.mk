@@ -127,25 +127,6 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
-#Houdini prebuilt
-HOUDINI_ARM_PREBUILTS_DIR := vendor/intel/houdini/arm
-houdini_prebuilt_stamp := $(HOUDINI_ARM_PREBUILTS_DIR)/stamp-prebuilt-done
-houdini_prebuilt_done := $(wildcard $(houdini_prebuilt_stamp))
-
-ifneq ($(houdini_prebuilt_done),)
-	INTEL_HOUDINI := true
-	#Houdini
-	PRODUCT_PACKAGES += libhoudini \
-		houdini \
-		enable_houdini \
-		disable_houdini \
-		check.xml \
-		cpuinfo \
-		cpuinfo.neon
-	#houdini arm libraries
-	-include vendor/intel/houdini/houdini.mk
-endif
-
 # psb video
 PRODUCT_PACKAGES += \
     pvr_drv_video
