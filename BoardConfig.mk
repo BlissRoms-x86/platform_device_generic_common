@@ -91,3 +91,5 @@ DEVICE_MANIFEST_FILE := device/generic/common/manifest.xml
 DEFAULT_ROOT_METHOD := supersu
 
 WITH_BLISS_CHARGER := false
+
+HOUDINI_PREINSTALL := intel
