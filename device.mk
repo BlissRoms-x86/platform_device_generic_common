@@ -127,57 +127,6 @@ PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 
-# psb video
-PRODUCT_PACKAGES += \
-    pvr_drv_video
-
-# Media SDK and OMX IL components
-PRODUCT_PACKAGES += \
-    libmfxsw32 \
-    libmfx_omx_core \
-    libmfx_omx_components_sw \
-    libgabi++-mfx \
-    libstlport-mfx
-
-# libva
-PRODUCT_PACKAGES += \
-    libva \
-    libva-android \
-    libva-tpi \
-    vainfo
-
-# libmix
-PRODUCT_PACKAGES += \
-    libmixvbp_mpeg4 \
-    libmixvbp_h264 \
-    libmixvbp_h264secure \
-    libmixvbp_vc1 \
-    libmixvbp_vp8 \
-    libmixvbp_mpeg2 \
-    libmixvbp \
-    libva_videodecoder \
-    libva_videoencoder
-
-PRODUCT_PACKAGES += \
-    libOMXVideoDecoderAVC \
-    libOMXVideoDecoderH263 \
-    libOMXVideoDecoderMPEG4 \
-    libOMXVideoDecoderWMV \
-    libOMXVideoDecoderVP8 \
-    libOMXVideoDecoderMPEG2 \
-    libOMXVideoDecoderVP9HWR \
-    libOMXVideoDecoderVP9Hybrid \
-    libOMXVideoEncoderAVC \
-    libOMXVideoEncoderH263 \
-    libOMXVideoEncoderMPEG4 \
-    libOMXVideoEncoderVP8
-    
-# libdrm
-PRODUCT_PACKAGES += \
-    libdrm \
-    dristat \
-    drmstat
-
 # Don't dex preopt prebuilt apps that will be updated from Play Store
 DONT_DEXPREOPT_PREBUILTS := true
 
