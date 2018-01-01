@@ -144,10 +144,7 @@ function init_hal_gralloc()
 			fi
 			;;
 		0*inteldrmfb|0*radeondrmfb|0*nouveaufb|0*svgadrmfb|0*amdgpudrmfb)
-			if [ "$HWCOMP" == "1" ]; then
-				set_property ro.hardware.hwcomposer drm
-				set_property ro.hardware.gralloc gbm
-			else
+			if [ "$HWACCEL" != "0" ]; then
 				set_property ro.hardware.gralloc drm
 				set_drm_mode
 			fi
