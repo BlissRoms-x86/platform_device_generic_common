@@ -144,7 +144,10 @@ function init_hal_gralloc()
 			fi
 			;;
 		0*inteldrmfb|0*radeondrmfb|0*nouveaufb|0*svgadrmfb|0*amdgpudrmfb)
-			if [ "$HWACCEL" != "0" ]; then
+			if [ "$HWCOMP" == "1" ]; then
+				set_property ro.hardware.hwcomposer drm
+				set_property ro.hardware.gralloc gbm
+			else
 				set_property ro.hardware.gralloc drm
 				set_drm_mode
 			fi
@@ -258,8 +261,10 @@ function init_hal_sensors()
 			set_property hal.sensors.iio.accel.matrix 0,1,0,1,0,0,0,0,-1
 			;;
 		*Surface.3*|*svnOEMB*)
+			set_property ro.iio.accel.x.opt_scale -1
 			set_property ro.iio.accel.y.opt_scale -1
-			;&
+			set_property ro.iio.accel.z.opt_scale -1
+			;;
 		*T10*TA*)
 			set_property ro.iio.accel.x.opt_scale -1
 			set_property ro.iio.accel.z.opt_scale -1
