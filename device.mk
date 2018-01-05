@@ -16,7 +16,7 @@
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1080
-TARGET_SCREEN_WIDTH := 1920
+TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOTANIMATION_HALF_RES := false
 
 # Inherit some common Bliss stuff.
@@ -26,7 +26,7 @@ $(call inherit-product, vendor/bliss/config/common.mk)
 $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
 
 #OpenGAPPS
-GAPPS_VARIANT := pico
+GAPPS_VARIANT := nano
 PRODUCT_PACKAGES += Chrome \
     KeyboardGoogle \
     LatinImeGoogle \
@@ -34,7 +34,6 @@ PRODUCT_PACKAGES += Chrome \
     YouTube \
     Wallpapers \
     WebViewGoogle \
-    PixelLauncher \
 
 GAPPS_FORCE_BROWSER_OVERRIDES := true
 
