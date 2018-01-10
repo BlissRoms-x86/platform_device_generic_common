@@ -101,4 +101,4 @@ PRODUCT_PACKAGES += \
     
 # OpenThos apps 
 PRODUCT_PACKAGES += \
-  OtoKeyboardMap 
+  OtoKeyboardMap \
