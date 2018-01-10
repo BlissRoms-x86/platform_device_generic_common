@@ -93,3 +93,7 @@ DEFAULT_ROOT_METHOD := supersu
 WITH_BLISS_CHARGER := false
 
 HOUDINI_PREINSTALL := intel
+
+USE_CHROMIUM := true
+
+CHROMIUM_X86 := true
