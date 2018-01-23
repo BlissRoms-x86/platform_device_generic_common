@@ -29,7 +29,7 @@ endif
 TARGET_PRELINK_MODULE := false
 TARGET_NO_KERNEL ?= false
 TARGET_NO_RECOVERY ?= true
-TARGET_EXTRA_KERNEL_MODULES := tp_smapi
+TARGET_EXTRA_KERNEL_MODULES := tp_smapi bcm2079x_i2c_mod tpt10_bat acpi_tpt10_bat
 ifneq ($(filter efi_img,$(MAKECMDGOALS)),)
 TARGET_KERNEL_ARCH ?= x86_64
 endif
