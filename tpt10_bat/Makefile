@@ -3,7 +3,7 @@
 # GPLv3
 #
 
-CFLAGS=-O2 -Wall
+# CFLAGS=-O2 -Wall
 # CFLAGS+=-DDEBUG
 
 PRG=tpt10-bat
