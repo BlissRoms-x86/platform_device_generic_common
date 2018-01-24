@@ -255,6 +255,9 @@ function init_hal_sensors()
 		*ONDATablet*)
 			set_property ro.iio.accel.order 102
 			;;
+		*Venue*8*Pro*3845*)
+			set_property ro.iio.accel.order 102
+			;;
 		*ST70416-6*)
 			set_property ro.iio.accel.order 102
 			;&
