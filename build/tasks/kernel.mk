@@ -10,6 +10,7 @@
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifeq ($(TARGET_PREBUILT_KERNEL),)
+ifeq ($(TARGET_PC_BUILD),true)
 
 KERNEL_DIR ?= kernel
 
@@ -102,5 +103,6 @@ ifdef TARGET_PREBUILT_MODULES
 	$(hide) cp -r $(TARGET_PREBUILT_MODULES) $(TARGET_OUT)/lib
 endif
 
+endif # TARGET_PC_BUILD 
 endif # TARGET_PREBUILT_KERNEL
 endif # KBUILD_OUTPUT

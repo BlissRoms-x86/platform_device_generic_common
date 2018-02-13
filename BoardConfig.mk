@@ -97,3 +97,5 @@ HOUDINI_PREINSTALL := intel
 USE_CHROMIUM := true
 
 CHROMIUM_X86 := true
+
+TARGET_PC_BUILD := true
