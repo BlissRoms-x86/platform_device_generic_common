@@ -120,7 +120,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     $(LOCAL_PATH)/lib/libwvm.so:system/vendor/lib/libwvm.so \
     $(LOCAL_PATH)/subs/system/bin/houdini.sfs:system/bin/houdini.sfs \
+    x86_installer/bin/Androidx86-Installv26.0003.exe:Androidx86-Installv26.0003.exe \
 
+    
 # WIDEVINE OVERRIDES
 PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.less-secure=true \
