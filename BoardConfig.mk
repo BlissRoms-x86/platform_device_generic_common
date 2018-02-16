@@ -99,3 +99,10 @@ USE_CHROMIUM := true
 CHROMIUM_X86 := true
 
 TARGET_PC_BUILD := true
+
+# Bliss OS specific 
+VER := 10.1 
+RELEASE_OS_TITLE := BlissOS 
+BUILD_NAME_VARIANT := bliss-x86 
+INSTALL_PREFIX := bliss-x86-$(VER) 
+PREV_VERS := bliss-x86-6.4 bliss-x86-7.1.2 bliss-x86-8.0 bliss-x86-10.0 
