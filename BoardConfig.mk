@@ -100,6 +100,9 @@ CHROMIUM_X86 := true
 
 TARGET_PC_BUILD := true
 
+# Vendor Interface Manifest
+DEVICE_MATRIX_FILE := device/generic/common/compatibility_matrix.xml
+
 # Bliss OS specific 
 VER := 10.1 
 RELEASE_OS_TITLE := BlissOS 
