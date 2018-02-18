@@ -18,7 +18,8 @@
 TARGET_SCREEN_HEIGHT := 1080
 TARGET_SCREEN_WIDTH := 1920
 TARGET_BOOTANIMATION_HALF_RES := false
-PRODUCT_COPY_FILES += \ 
+
+PRODUCT_COPY_FILES := \ 
     $(LOCAL_PATH)/bootanimation/bootanimation.zip:system/media/bootanimation.zip 
 
 # Inherit some common Bliss stuff.
