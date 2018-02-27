@@ -16,8 +16,8 @@
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1080
-TARGET_SCREEN_WIDTH := 1920
-TARGET_BOOTANIMATION_HALF_RES := false
+TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOTANIMATION_HALF_RES := true
 
 PRODUCT_COPY_FILES := \ 
     $(LOCAL_PATH)/bootanimation/bootanimation.zip:system/media/bootanimation.zip 
