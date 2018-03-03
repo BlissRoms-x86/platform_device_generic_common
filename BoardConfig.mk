@@ -103,6 +103,11 @@ TARGET_PC_BUILD := true
 # Vendor Interface Manifest
 DEVICE_MATRIX_FILE := device/generic/common/compatibility_matrix.xml
 
+# Some CTS tests will be skipped based on what the initial API level that 
+# shipped on device was.
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.product.first_api_level=21
+    
 # Bliss OS specific 
 VER := 10.1 
 RELEASE_OS_TITLE := BlissOS 
