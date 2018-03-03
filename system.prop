@@ -1,2 +1,5 @@
 # system.prop for lollipop-x86
 #poweroff.doubleclick=1
+# Some CTS tests will be skipped based on what the initial API level that  
+# shipped on device was. 
+ro.product.first_api_level=21 
