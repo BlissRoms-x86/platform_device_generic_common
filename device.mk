@@ -31,6 +31,7 @@ $(call inherit-product-if-exists, vendor/opengapps/build/opengapps-packages.mk)
 #OpenGAPPS
 GAPPS_VARIANT := nano
 PRODUCT_PACKAGES += Chrome \
+	Chromium \
     KeyboardGoogle \
     LatinImeGoogle \
     GoogleTTS \
